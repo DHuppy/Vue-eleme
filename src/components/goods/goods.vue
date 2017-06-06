@@ -79,7 +79,7 @@ export default {
     }
   },
   created() {
-    this.$http.get('/data.json').then((response) => {
+    this.$http.get('/Vue-eleme/data.json').then((response) => {
       this.goods = response.data.goods   // 数据是异步请求获得的
       this.$nextTick(() => {      // 进行dom更新
         this._initScroll()
