@@ -19,11 +19,8 @@
       }
     },
     created() {
-      this.$http.get('/api/seller').then((response) => {
-        response = response.body
-        if (response.errno === 0) {
-          this.seller = response.data
-        }
+      this.$http.get('/data.json').then((response) => {
+        this.seller = response.data.seller
       })
     },
     components: {
