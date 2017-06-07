@@ -19,7 +19,7 @@
       }
     },
     created() {
-      this.$http.get('data.json').then((response) => {
+      this.$http.get('/data.json').then((response) => {
         this.seller = response.data.seller
       })
     },
