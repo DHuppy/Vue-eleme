@@ -19,7 +19,7 @@
       }
     },
     created() {
-      this.$http.get('data.json').then((response) => {
+      this.$http.get('data.json').then((response) => {    // 当前目录（dist）下的data.json  跟index.html同级
         this.seller = response.data.seller
       })
     },
